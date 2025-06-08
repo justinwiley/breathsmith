@@ -1,0 +1,24 @@
+[project]
+name = "breathsmith"
+version = "0.1.0"
+description = "Personal MCP server with a collection of useful tools"
+authors = [{name = "Justin Wiley"}]
+dependencies = [
+    "fastmcp>=1.2.0",
+    "requests>=2.31.0",
+    "python-dateutil>=2.8.2",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "anthropic>=0.18.0",
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
